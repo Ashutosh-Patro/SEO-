@@ -1,0 +1,19 @@
+le {
+    color: #6F77F1;
+}
+ .sub-button {
+    background-color: #6F77F1;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+ }
+
+ .member-2 {
+    background-image: url(/imgs/member-2-bg.png);
+    background-repeat: no-repeat;
+ }
+
+ .member-4 {
+    background-image: url(/imgs/member-4-bg.png);
+    background-repeat: no-repeat;
+ }
