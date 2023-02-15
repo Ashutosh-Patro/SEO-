@@ -1,19 +1,84 @@
-le {
-    color: #6F77F1;
+* {
+   font-family: "poppins";
 }
- .sub-button {
-    background-color: #6F77F1;
-    border-radius: 3px;
-    outline: none;
-    border: none;
- }
 
- .member-2 {
-    background-image: url(/imgs/member-2-bg.png);
-    background-repeat: no-repeat;
- }
+le {
+   color: #6F77F1;
+}
 
- .member-4 {
-    background-image: url(/imgs/member-4-bg.png);
-    background-repeat: no-repeat;
- }
+.sub-button {
+   background-color: #6F77F1;
+   border-radius: 3px;
+   outline: none;
+   border: none;
+}
+
+.member-2 {
+   background-image: url(/imgs/member-2-bg.png);
+   background-repeat: no-repeat;
+}
+
+.member-4 {
+   background-image: url(/imgs/member-4-bg.png);
+   background-repeat: no-repeat;
+}
+
+.choose-card:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.zoom :hover {
+   zoom: 102%;
+   background-color: #6F77F1;
+   color: azure;
+}
+
+.perfect-solution {
+   background-image: url(/imgs/Perfect\ Solution.png);
+   background-repeat: no-repeat;
+}
+
+.expert {
+   position: absolute;
+   right: 0;
+   color: #6f77f1;
+   border: 2px solid #6f77f1;
+   padding: 0.3rem;
+   rotate: -15deg;
+   font-size: 3rem;
+}
+
+h1 {
+   font-weight: bold;
+   position: relative;
+}
+
+@media (min-width: 0px) {
+   .right {
+      height: 70vh;
+      background: url(/imgs/woman.png) no-repeat center center/70%,
+         url(/imgs/zigzag.png) no-repeat center center/80%,
+         url(/imgs/behind-box.png) no-repeat center center/70%;
+   }
+
+   h1 {
+      font-size: 3rem !important;
+   }
+}
+
+@media (min-width: 800px) {
+   .top_section {
+      height: 80vh;
+   }
+
+   .right {
+      height: 100%;
+      background: url(/imgs/woman.png) no-repeat left center/70%,
+         url(/imgs/zigzag.png) no-repeat left center/80%,
+         url(/imgs/behind-box.png) no-repeat center top/45%;
+   }
+
+   h1 {
+      font-size: 4rem !important;
+   }
+}
