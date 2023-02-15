@@ -53,6 +53,14 @@ h1 {
    position: relative;
 }
 
+.name:hover {
+   color: #6F77F1;
+}
+
+.expert-box:hover {
+   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
 @media (min-width: 0px) {
    .right {
       height: 70vh;
