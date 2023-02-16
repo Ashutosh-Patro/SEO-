@@ -1,4 +1,6 @@
 * {
+   margin: 0;
+   padding: 0;
    font-family: "poppins";
 }
 
@@ -6,11 +8,40 @@ le {
    color: #6F77F1;
 }
 
+.navbar-items {
+   display: inline-block;
+   position: relative;
+   color: #0087ca;
+}
+
+.navbar-items::after {
+   content: '';
+   position: absolute;
+   width: 70%;
+   transform: scaleX(0);
+   height: 2px;
+   bottom: 0;
+   left: 0;
+   background-color: #6f77f1;
+   transform-origin: bottom right;
+   transition: transform 0.25s ease-out;
+}
+
+.navbar-items:hover::after {
+   transform: scaleX(1);
+   transform-origin: bottom left;
+}
+
 .sub-button {
    background-color: #6F77F1;
    border-radius: 3px;
    outline: none;
    border: none;
+}
+
+.marketing-management-content:hover {
+   box-shadow: 0px 17px 33px -14px rgba(2, 22, 5, 0.07);
+   border-radius: 5px;
 }
 
 .member-2 {
@@ -33,9 +64,27 @@ le {
    color: azure;
 }
 
-.perfect-solution {
-   background-image: url(/imgs/Perfect\ Solution.png);
-   background-repeat: no-repeat;
+.slider-card:hover {
+   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.circle {
+   width: 10px;
+   height: 10px;
+   background-color: #E9E9E9;
+   border-radius: 100%;
+}
+
+.activated {
+   background-color: #6F77F1;
+}
+
+.current-card {
+   box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+}
+
+.team-select :hover {
+   zoom: 102%;
 }
 
 .expert {
@@ -53,12 +102,9 @@ h1 {
    position: relative;
 }
 
-.name:hover {
-   color: #6F77F1;
-}
-
 .expert-box:hover {
    box-shadow: 0px 34px 50px -17px rgba(2, 22, 5, 0.1);
+   color: #6F77F1;
 }
 
 @media (min-width: 0px) {
