@@ -20,8 +20,8 @@
 </head>
 
 <body>
-  <nav class="container navbar navbar-expand-lg w-100 d-flex flex-column flex-md-row px-2 justify-content-between">
-    <a class="logo-text navbar-brand w-25 fs-5 text-center text-md-start" href="#">nuvosa <img
+  <nav class="navbar navbar-expand-lg w-100 d-flex flex-column flex-md-row px-2 justify-content-stretch">
+    <a class="logo-text navbar-brand w-25 fs-3 text-center text-md-start" href="#">nuvosa <img
         src="./imgs/nav-footer/nav_red_dot.png" alt=""></a>
     <div class="text-center w-75 d-flex flex-column flex-md-row justify-content-around" id="navbarNavDropdown">
       <button class="navbar-toggler form-control" type="button" data-bs-toggle="collapse" data-bs-target="#colNav">
@@ -54,15 +54,14 @@
     </div>
   </nav>
   <section name="Hero"
-    class="my-3 mt-5 w-100 d-flex flex-md-row flex-column-reverse justify-content-center align-items-center top_section">
-    <div class="left w-md-50 w-100 p-md-5 p-2">
-      <h1>
-        <b>Increase your web traffic with our</b>
-        <span class="purple_dot"></span>
-        <span class="purple_dot"></span>
-        <span class="purple_dot"></span>
-        <span class="purple_dotç"></span>
-        <span class="expert">expert</span>
+    class="w-100 max-container d-flex flex-md-row flex-column justify-content-center align-items-center top_section">
+    <div class="left w-100 p-md-5 p-2">
+      <h1 class="fw-semibold">
+        Increase your web traffic with
+        <span class="position-relative">
+          our
+          <span class="expert">expert</span>
+        </span>
       </h1>
       <p class="my-4 w-100 fs-5 fw-light">
         It is a long established fact that a reader will be distracted by the
@@ -71,19 +70,32 @@
         simply. It is a long established fact that a reader will be
         distracted.
       </p>
-      <div class="d-flex flex-column flex-md-row align-items-center justify-content-center w-75">
-        <button class="btn bg-warning text-black w-md-25 mb-2 w-50 me-4">
-          <a class="started-btn" href="" aria-placeholder="Get Started">Get Started</a>
+      <div
+        class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-start justify-content-center w-100">
+        <button class="btn bg-warning button_hover text-black mb-2 w-50 me-4 button_hover">
+          Get Started
         </button>
-        <a class="d-flex justify-content-center align-items-center w-50" href=""><img
-            src="./imgs/hero/YouTube - Original.png" class="" alt="" /></a>
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="./imgs/hero/YouTube - Original.png" class="w-100 img-fluid" alt="" />
+        </div>
       </div>
     </div>
-    <div class="w-100">
-      <img class="img-fluid" src="./imgs/hero/hero-section-image.png" alt="">
+    <div class="right w-100 position-relative d-flex align-items-end">
+      <div class="creative shadow-sm position-absolute tp-0 bg-white p-2">
+        <p>Our Creative Team</p>
+        <img src="./imgs/hero/team-man-1.png" class="img-fluid position-absolute top-25" alt="" style="left: 5%" />
+        <img src="./imgs/hero/team-man-2.png" class="img-fluid position-absolute top-25" alt="" style="left: 20%" />
+        <img src="./imgs/hero/team-man-3.png" class="img-fluid position-absolute top-25" alt="" style="left: 35%" />
+        <img src="./imgs/hero/team-man-4.png" class="img-fluid position-absolute top-25" alt="" style="left: 50%" />
+        <a href=""><img src="./imgs/hero/team-plus.png" class="img-fluid position-absolute top-25" alt=""
+            style="left: 65%" /></a>
+      </div>
+      <div class="w-100">
+        <img src="./imgs/hero/hero-section-image.png" class="img-fluid w-100" alt="" />
+      </div>
     </div>
   </section>
-  <section name="marketing-management" class="d-flex flex-wrap justify-content-evenly my-3">
+  <section name="marketing-management" class="d-flex flex-wrap justify-content-evenly my-3 mt-5">
     <div class="marketing-management-content card m-2" style="width: 18rem; border: none;">
       <div class="d-flex">
         <img class="card-img-left" src="./imgs/marketing-management/social-media-management.png" alt="Card image cap">
@@ -118,10 +130,10 @@
       </div>
     </div>
   </section>
-  <section name="website-optimization" class="my-3">
-    <div class="container">
-      <h1 class="d-flex flex-wrap">Optimising your&nbsp;<le>Website</le>
-      </h1>
+  <section name="website-optimization" class="my-5">
+    <div class="container d-flex flex-column gap-3">
+      <h2 class="d-flex flex-wrap fs-1">Optimising your&nbsp;<le>Website</le>
+      </h2>
       <p>It is a long established fact that a reader will be distracted by the readable content of a page when It is a
         long .</p>
     </div>
@@ -132,8 +144,9 @@
         <img class="feature-icon d-flex justify-content-center align-items-center fs-2 mb-3"
           src="./imgs/website-optimization/keyword-research.png"
           style="background: url(./imgs/website-optimization/keyword-research-bg.png) no-repeat center/90%;" alt="">
-        <h3 class="fs-2">Keyword Research</h3>
-        <p> It is a long established fact that a reader will be distracted by the It is a long established .</p>
+        <h4 class="fs-2 text-md-start">Keyword Research</h4>
+        <p class="text-md-start"> It is a long established fact that a reader will be distracted by the It is a long
+          established .</p>
       </div>
       <div
         class="card border-0 col d-flex justify-content-center align-items-center align-items-lg-start text-center optimisation-content my-3"
@@ -141,8 +154,9 @@
         <img class="feature-icon d-flex justify-content-center align-items-center fs-2 mb-3"
           src="./imgs/website-optimization/content-optimisation.png"
           style="background: url(./imgs/website-optimization/content-optimisation-bg.png) no-repeat center/90%;" alt="">
-        <h3 class="fs-2">Content Optimisation</h3>
-        <p> It is a long established fact that a reader will be distracted by the It is a long established .</p>
+        <h4 class="fs-2 text-md-start">Content Optimisation</h4>
+        <p class="text-md-start"> It is a long established fact that a reader will be distracted by the It is a long
+          established .</p>
       </div>
       <div
         class="card border-0 col d-flex justify-content-center align-items-center align-items-lg-start text-center optimisation-content my-3"
@@ -150,8 +164,9 @@
         <img class="feature-icon d-flex justify-content-center align-items-center fs-2 mb-3"
           src="./imgs/website-optimization/target-analysis.png"
           style="background: url(./imgs/website-optimization/target-analysis-bg.png) no-repeat center/90%;" alt="">
-        <h3 class="fs-2 w-100">Target<br>Analysis</h3>
-        <p> It is a long established fact that a reader will be distracted by the It is a long established .</p>
+        <h4 class="fs-2 w-100 text-md-start">Target<br>Analysis</h4>
+        <p class="text-md-start"> It is a long established fact that a reader will be distracted by the It is a long
+          established .</p>
       </div>
       <div
         class="card border-0 col d-flex justify-content-center align-items-center align-items-lg-start text-center optimisation-content my-3"
@@ -159,8 +174,9 @@
         <img class="feature-icon d-flex justify-content-center align-items-center fs-2 mb-3"
           src="./imgs/website-optimization/continuous-testing.png"
           style="background: url(./imgs/website-optimization/continuous-testing-bg.png) no-repeat center/90%;" alt="">
-        <h3 class="fs-2">Continuous Testing</h3>
-        <p> It is a long established fact that a reader will be distracted by the It is a long established .</p>
+        <h3 class="fs-2 text-md-start">Continuous Testing</h3>
+        <p class="text-md-start"> It is a long established fact that a reader will be distracted by the It is a long
+          established .</p>
       </div>
     </div>
   </section>
@@ -169,12 +185,12 @@
     style="background-image: url(./imgs/perfect-business-solution/Perfect\ Solution.png) ; background-repeat: no-repeat; ;">
     <div class="col-md-5">
       <p class="py-3 text-center text-md-start">
-      <h1>Perfect Solution For Your <le>Business</le>
-      </h1>
+      <h2 class="fs-1">Perfect Solution For Your <le>Business</le>
+      </h2>
       <p>
         It is a long established fact that a reader will be distracted by
         the It is a long established .t is a long established fact that a
-        reader will be distracted by the readable content of .
+        reader will be distracted by the readable content of.
       </p>
       <button class="btn bg-warning">Learn More</button>
       </p>
@@ -186,11 +202,11 @@
     <div class="row row-cols-1 row-cols-lg-4 mb-3 text-center w-100 d-flex justify-content-center p-3 gap-3">
       <div
         class="p-2 col border-0 mb-4 rounded-3 choose-card d-flex align-items-center align-items-sm-start flex-column ">
-        <img src="./imgs/business-leads-sales/grow-your-business.png" class="w-25" alt="">
+        <img class=" my-2" src="./imgs/business-leads-sales/grow-your-business.png" class="w-25" alt="">
         <div class="card-body">
-          <h4 class="card-title">Grow Your Business</h4>
+          <h4 class="card-title text-md-start">Grow Your Business</h4>
           <br>
-          <p class="fs-5 text-muted">
+          <p class="fs-5 text-muted text-md-start">
             It is a long established fact that a reader will be distracted by.
             <br>
             <a class="active bls-anchor" href="">Read More...</a>
@@ -198,11 +214,11 @@
       </div>
       <div
         class="col p-2  border-0 mb-4 rounded-3 choose-card d-flex align-items-center align-items-sm-start flex-column">
-        <img src="./imgs/business-leads-sales/get-quality-leads.png" class="w-25" alt="">
+        <img class=" my-2" src="./imgs/business-leads-sales/get-quality-leads.png" class="w-25" alt="">
         <div class="card-body">
-          <h4 class="card-title">Get Quality Leads</h4>
+          <h4 class="card-title text-md-start">Get Quality Leads</h4>
           <br>
-          <p class="fs-5 text-muted">
+          <p class="fs-5 text-muted text-md-start">
             It is a long established fact that a reader will be distracted by.
             <br>
             <a class="active bls-anchor" href="">Read More...</a>
@@ -210,11 +226,11 @@
       </div>
       <div
         class="col p-2 border-0 mb-4 rounded-3 choose-card d-flex align-items-center align-items-sm-start flex-column">
-        <img src="./imgs/business-leads-sales/drive-more-sales.png" class="w-25" alt="">
-        <div class="card-body">
+        <img class=" my-2" src="./imgs/business-leads-sales/drive-more-sales.png" class="w-25" alt="">
+        <div class="card-body text-md-start">
           <h4 class="card-title">Drive More Sales</h4>
           <br>
-          <p class="fs-5 text-muted">
+          <p class="fs-5 text-muted text-md-start">
             It is a long established fact that a reader will be distracted by.
             <br>
             <a class="active bls-anchor" href="">Read More...</a>
@@ -225,8 +241,8 @@
   <section name="why choose us"
     class="my-3 py-5 d-flex justify-content-center flex-column align-items-center bg-body-tertiary w-100">
     <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal">Why You Should <le>Choose Us.</le>
-      </h1>
+      <h2 class="display-4 fw-normal">Why You Should <le>Choose Us.</le>
+      </h2>
       <p class="fs-5 text-center text-body-tertiary">It is a long established fact that a reader will be distracted by
         the readable content.It is a long established fact that a reader .It is a long established fact that a reader
         will be .</p>
@@ -274,27 +290,28 @@
   <section name="need it" class="d-flex flex-column flex-md-row justify-content-evenly align-items-center py-5">
     <img class="img-fluid w-50" src="./imgs/need-it/SEO_need-it.png" alt="">
     <div class="px-1">
-      <h2 class="fs-1">You Make Ask What <br> SEO & Why Do You <le>Need It</le>
+      <h2 class="fs-1 text-center text-md-start">You Make Ask What <br> SEO & Why Do You <le>Need It</le>
       </h2>
-      <p>It is a long established fact that a reader will be distracted by the readable content .It is a long
+      <p class="text-center text-md-start">It is a long established fact that a reader will be distracted by the
+        readable content .It is a long
         established fact that a reader .It is a long.</p>
       <div class="need-it-items d-flex gap-3 align-items-center my-4 py-2 flex-column flex-md-row">
         <img src="./imgs/need-it/social_media_globe.png" alt="">
-        <div>
+        <div class="text-center text-md-start">
           <h4>Social Media Marketing</h4>
           <p>It is a long established fact that a reader will be distracted by the.</p>
         </div>
       </div>
       <div class="need-it-items d-flex gap-3 align-items-center my-4 py-2 flex-column flex-md-row">
         <img src="./imgs/need-it/email_marketing_icon.png" alt="">
-        <div>
+        <div class="text-center text-md-start">
           <h4>Email Marketing</h4>
           <p>It is a long established fact that a reader will be distracted by the.</p>
         </div>
       </div>
       <div class="need-it-items d-flex gap-3 align-items-center my-4 py-2 flex-column flex-md-row">
         <img src="./imgs/need-it/SEO_optimization_icon.png" alt="">
-        <div>
+        <div class="text-center text-md-start">
           <h4>SEO Optimization</h4>
           <p>It is a long established fact that a reader will be distracted by the.</p>
         </div>
@@ -414,7 +431,8 @@
         </div>
       </div>
       <div class="expert-box border border-secondary-subtle text-center py-2 px-3 m-3">
-        <img class="member-2" src="./imgs/experts/member-2.png" alt="">
+        <img class="member-2" src="./imgs/experts/member-2.png" alt=""
+          style="background-image: url(./imgs/experts/member-2-bg.png);">
         <p>John Doe</p>
         <p class="text-body-tertiary">Marketing Manager</p>
         <div class="d-flex justify-content-evenly">
@@ -436,7 +454,8 @@
         </div>
       </div>
       <div class="expert-box border border-secondary-subtle text-center py-2 px-3 m-3">
-        <img class="member-4" src="./imgs/experts/member-4.png" alt="">
+        <img class="member-4" src="./imgs/experts/member-4.png" alt=""
+          style="background-image: url(./imgs/experts/member-4-bg.png);">
         <p>Doug Norm</p>
         <p class="text-body-tertiary">Marketing Manager</p>
         <div class="d-flex justify-content-evenly">
@@ -448,48 +467,52 @@
       </div>
     </div>
   </section>
-  <section name="Clients" class="my-3 py-5">
+  <section name="Clients" class="my-5 py-5">
     <h2 class="text-center">Our Clients Say</h2>
     <p class="text-center">It is a long established fact that a reader will be distracted by the readable content
       .It is a </p>
     <div class="swiper mySwiper w-md-100 w-sm-50 d-flex justify-content-center">
       <div class="swiper-wrapper " style="width: 100%;">
         <div class="text-center border border-secondary-subtle m-2 p-3 swiper-slide">
+          <img class="position-absolute d-flex align-self-start" src="./imgs/clients/client-apostrophe.png" alt="">
           <p>It is a long established fact that a reader will be distracted by the readable content .It is a
             long
             established fact that a reader </p>
-          <div class="w-md-25">
-            <img class="w-md-25" src="./imgs/clients/client-1.png" alt="">
+          <div>
+            <img src="./imgs/clients/client-1.png" alt="">
           </div>
           <p>CLay Porter</p>
           <p class="text-body-tertiary">Ship builder</p>
         </div>
         <div class="text-center border border-secondary-subtle m-2 p-3 swiper-slide">
+          <img class="position-absolute d-flex align-self-start" src="./imgs/clients/client-apostrophe.png" alt="">
           <p>It is a long established fact that a reader will be distracted by the readable content .It is a
             long
             established fact that a reader </p>
-          <div class="w-md-25">
-            <img class="w-md-25" src="./imgs/clients/client-2.png" alt="">
+          <div>
+            <img src="./imgs/clients/client-2.png" alt="">
           </div>
           <p>CLay Porter</p>
           <p class="text-body-tertiary">Ship builder</p>
         </div>
         <div class="text-center border border-secondary-subtle m-2 p-3 swiper-slide">
+          <img class="position-absolute d-flex align-self-start" src="./imgs/clients/client-apostrophe.png" alt="">
           <p>It is a long established fact that a reader will be distracted by the readable content .It is a
             long
             established fact that a reader </p>
-          <div class="w-md-25">
-            <img class="w-md-25" src="./imgs/clients/client-3.png" alt="">
+          <div>
+            <img src="./imgs/clients/client-3.png" alt="">
           </div>
           <p>CLay Porter</p>
           <p class="text-body-tertiary">Ship builder</p>
         </div>
         <div class="text-center border border-secondary-subtle m-2 p-3 swiper-slide">
+          <img class="position-absolute d-flex align-self-start" src="./imgs/clients/client-apostrophe.png" alt="">
           <p>It is a long established fact that a reader will be distracted by the readable content .It is a
             long
             established fact that a reader </p>
-          <div class="w-md-25">
-            <img class="w-md-25 " src="./imgs/clients/client-4.png" alt="">
+          <div>
+            <img src="./imgs/clients/client-4.png" alt="">
           </div>
           <p>CLay Porter</p>
           <p class="text-body-tertiary">Ship builder</p>
@@ -516,11 +539,21 @@
     <div class="fs-5 text-center">nuvosa <img src="./imgs/nav-footer/nav_red_dot.png" alt=""></div>
     <ul class="offset-md-3 col-md-6 d-flex flex-column flex-md-row text-center py-2 px-4 justify-content-around gap-1"
       style="list-style: none;">
-      <li>Overview</li>
-      <li>Pricing</li>
-      <li>Careers</li>
-      <li>Help</li>
-      <li>Privacy</li>
+      <li>
+        <a class="footer-items" href="">Overview</a>
+      </li>
+      <li>
+        <a class="footer-items" href="">Pricing</a>
+      </li>
+      <li>
+        <a class="footer-items" href="">Careers</a>
+      </li>
+      <li>
+        <a class="footer-items" href="">Help</a>
+      </li>
+      <li>
+        <a class="footer-items" href="">Privacy</a>
+      </li>
     </ul>
   </section>
   <div>
@@ -531,9 +564,15 @@
       <p class="text-center text-md-start">Copyright © 2023 nuvosa, All rights reserved.</p>
     </div>
     <div class="d-flex flex-column flex-md-row px-1 gap-3 text-center justify-content-end w-100">
-      <p>Terms Of Use</p>
-      <p>Copyright & Trademark</p>
-      <p>Policy</p>
+      <p>
+        <a class="footer-items" href="">Terms Of Use</a>
+      </p>
+      <p>
+        <a class="footer-items" href="">Copyright & Trademark</a>
+      </p>
+      <p>
+        <a class="footer-items" href="">Policy</a>
+      </p>
     </div>
   </section>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
