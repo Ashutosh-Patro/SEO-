@@ -34,6 +34,19 @@ le {
    transform-origin: bottom left;
 }
 
+.started-btn {
+   text-decoration: none;
+   color: black;
+}
+
+.bls-anchor {
+   text-decoration: none;
+}
+
+.bls-anchor:hover {
+   text-decoration: underline;
+}
+
 .sub-button {
    background-color: #6F77F1;
    border-radius: 3px;
@@ -60,28 +73,32 @@ le {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-/* .price-tag:hover {
-   background: url(/imgs/price-bg.png) no-repeat center;
-   color: white !important;
-   scale: 1.05;
-   transition-property: all;
-   transition-duration: 0.5s;
-} */
+.optimisation-content:hover {
+   /* box-sizing: border-box; */
+   border-bottom: 2px solid #717AE0 !important;
+}
+
 .price-tag {
    transition: transform 1s;
 }
 
 .price-tag:hover {
-   background: url(/imgs/price-bg.png) no-repeat center;
+   background: url(../imgs/plans/price-bg.png) no-repeat center;
    color: white !important;
    transform: scale(1.1);
 }
 
-
-
 .price-btn {
    background-color: white;
    border-radius: 4px;
+}
+
+.need-it-items {
+   border-radius: 4px;
+}
+
+.need-it-items:hover {
+   box-shadow: 5px 25px 37px rgba(2, 22, 5, 0.06);
 }
 
 .swiper {
