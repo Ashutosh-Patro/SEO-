@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
-* {
+body {
    margin: 0;
    padding: 0;
    font-family: "poppins";
 }
 
-le {
+.header-color {
    color: #6F77F1;
 }
 
@@ -68,12 +68,12 @@ le {
 }
 
 .member-2 {
-   background-image: url(/imgs/member-2-bg.png);
+   background-image: url(../img/member-2-bg.png);
    background-repeat: no-repeat;
 }
 
 .member-4 {
-   background-image: url(/imgs/member-4-bg.png);
+   background-image: url(../img/member-4-bg.png);
    background-repeat: no-repeat;
 }
 
@@ -91,7 +91,7 @@ le {
 }
 
 .price-tag:hover {
-   background: url(../imgs/plans/price-bg.png) no-repeat center;
+   background: url(../img/plans/price-bg.png) no-repeat center;
    color: white !important;
    transform: scale(1.1);
    box-shadow: 0px 26px 42px rgba(2, 22, 5, 0.08);
