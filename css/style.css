@@ -34,6 +34,15 @@ body {
    transform-origin: bottom left;
 }
 
+.lets-talk {
+   text-decoration: none;
+   color: white;
+   background-color: black;
+   border: solid black 2px;
+   padding: 5px 50px;
+   border-radius: 4px;
+}
+
 .started-btn {
    text-decoration: none;
    color: black;
@@ -81,6 +90,11 @@ body {
    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
+.choose-card:hover .learn-btn {
+   background-color: #FAD725;
+   color: black;
+}
+
 .optimisation-content:hover {
    /* box-sizing: border-box; */
    border-bottom: 2px solid #717AE0 !important;
@@ -93,8 +107,16 @@ body {
 .price-tag:hover {
    background: url(../img/plans/price-bg.png) no-repeat center;
    color: white !important;
-   transform: scale(1.1);
+   transform: scale(1.05);
    box-shadow: 0px 26px 42px rgba(2, 22, 5, 0.08);
+}
+
+.price-tag:hover .header-color {
+   color: white;
+}
+
+.price-tag:hover .price-btn {
+   background-color: #FAD725;
 }
 
 .price-btn {
@@ -137,6 +159,7 @@ body {
 h1 {
    font-weight: bold;
    position: relative;
+   font-size: 3rem !important;
 }
 
 .expert-box:hover {
@@ -147,10 +170,6 @@ h1 {
 .footer-items {
    text-decoration: none;
    color: black;
-}
-
-h1 {
-   font-size: 3rem !important;
 }
 
 @media (min-width: 800px) {
