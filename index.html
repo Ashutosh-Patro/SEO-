@@ -45,11 +45,12 @@
             <a class="nav-link mx-2" href="#" target="_blank">Contact</a>
           </li>
         </ul>
-        <div class="d-flex flex-column flex-md-row justify-content-end align-items-center my-1 gap-2 text-center w-100"
+        <div class="d-flex flex-column flex-md-row justify-content-end align-items-stretch my-1 gap-2 text-center w-100"
           role="search">
           <a class="lets-talk" href="#" target="_blank">Let's Talk</a>
-          <button class="btn btn-warning btn-outline-success" id="search-btn" type="submit"><img
+          <button class="btn btn-warning btn-outline-success" id="search-btn" type="submit" onclick="openSearch()"><img
               src="./img/nav-footer/search.png" alt="search"></button>
+          <input type="text" class="hide" id="search-bar">
         </div>
       </div>
     </div>

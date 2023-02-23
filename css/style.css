@@ -34,6 +34,11 @@ body {
    transform-origin: bottom left;
 }
 
+.hide {
+   display: none;
+   padding: 5px;
+}
+
 .lets-talk {
    text-decoration: none;
    color: white;
